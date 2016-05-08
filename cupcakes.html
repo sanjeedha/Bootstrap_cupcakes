@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link href="css/style.css" rel="stylesheet">
+
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/slider1.css" rel="stylesheet">
+	<link href="css/slider2.css" rel="stylesheet">
+	<link href="css/slider3.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Serif">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Boogaloo">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Economica:700,400italic">
+     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine:400"/>
+
+  <style>
+  .modal-header, h4, .close {
+      background-color: #F6F4D8;
+      text-align: center;
+      font-size: 30px;
+  }
+  .modal-footer {
+      background-color: #F6F4D8;
+  }
+
+.nav-tabs>li>a:hover, .nav>li>a:focus, .nav>li>a:hover {
+    background-color: #F6F4D8;
+}
+
+.btn-custom {
+  background-color: hsl(42, 52%, 73%) !important;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f1e8d4", endColorstr="#ddc896");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#f1e8d4), to(#ddc896));
+  background-image: -moz-linear-gradient(top, #f1e8d4, #ddc896);
+  background-image: -ms-linear-gradient(top, #f1e8d4, #ddc896);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f1e8d4), color-stop(100%, #ddc896));
+  background-image: -webkit-linear-gradient(top, #f1e8d4, #ddc896);
+  background-image: -o-linear-gradient(top, #f1e8d4, #ddc896);
+  background-image: linear-gradient(#f1e8d4, #ddc896);
+  border-color: #ddc896 #ddc896 hsl(42, 52%, 69%);
+  color: #333 !important;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.26);
+  -webkit-font-smoothing: antialiased;
+}
+
+.modal-content  {
+    -webkit-border-radius: 5px ;
+    -moz-border-radius: 5px ;
+    border-radius: 5px;
+}
+  </style>
+</head>
+<body style="background-color:#F6F4D8">
+
+
+	<!--start: Header -->
+	<header>
+
+		<!--start: Container -->
+		<div class="container">
+
+			<!--start: Row -->
+			<div class="row-fluid">
+
+				<!--start: Navigation -->
+				<div class="navigation">
+
+					<div class="navbar">
+
+			    		<div class="navbar-inner">
+
+			          		<div class="nav-collapse">
+                                <a href="index.html">
+                                 <img src="img/logo.png"/></a>
+
+			          		</div>
+			        	</div>
+			      	</div>
+
+
+				</div>
+				<!--end: Navigation -->
+
+			</div>
+			<!--end: Row -->
+
+		</div>
+		<!--end: Container-->
+
+	</header>
+	<!--end: Header-->
+	<br><br><br><br><br><br><br>
+	<!--start: Container -->
+		<div class="container">
+
+			<!--start: Row -->
+			<div class="row-fluid">
+			<div class="span2">
+
+			</div>
+			<div class="span4">
+			<center><img src="img/cup.png" style="height:300px; width:360px;"/></center>
+			<br/>
+			</div>
+			<div class="span1">
+
+			</div>
+			<div class="span4">
+			<b>DESCRIPTION</b><br/>
+			<br><p>
+			A delicious set of cupcakes just for you with trusted signature flavors and rich cheese frosting. You can customized it and can include a personal message for your loved ones.
+Available Flavors: - Banana, Red Velvet, Raspberry, vanilla, Coconut, caramel, chocolate.
+
+			</p><br>
+			<p>
+			We carefully bake in small batches by hand using organic products to offer freshly baked Cupcakes within hours.
+			</p><br><p>
+			Price: - $3.50 each regular, $42.00 per dozen   |   $2.25 each mini, $27.00 per dozen
+			</p>
+			</div>
+			<div class="span1">
+
+			</div>
+			<!--end: Row -->
+
+		</div>
+		<!--end: Container-->
+		<div class="container">
+
+			<!--start: Row -->
+			<div class="row-fluid">
+			<div class="span2">
+
+			</div>
+			<div class="span4">
+<h3><b><span style="margin-left:110px;">Cupcakes</span></b></h3>
+			<br/>
+			</div>
+			<div class="span1">
+
+			</div>
+			<div class="span4">
+
+<div class="container">
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-custom" id="myBtn">Download Brochure</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content" style="border-radius:5px;">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h5><span class="glyphicon glyphicon-lock"></span>&nbsp;Please login or register to download!</h5>
+        </div>
+        <div class="modal-body" style="padding:40px 50px;">
+<ul class="nav nav-tabs">
+  <li class="active"><a data-toggle="tab" href="#Login">Login</a></li>
+  <li><a data-toggle="tab" href="#Register">Register</a></li>
+</ul>
+<br>
+
+ <div class="tab-content">
+    <div id="Login" class="tab-pane fade in active">
+     <form role="form" class="logi">
+            <div class="form-group">
+              <label for="usrnameL"><span class="glyphicon glyphicon-user"></span> Username</label>
+              <input type="email" class="form-control" id="usrnameL" name="usrnameL" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="pswL"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+              <input type="password" class="form-control" id="pswL" name="pswL" placeholder="Enter password">
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="" checked>Remember me</label>
+            </div>
+              <button type="submit" id="log" class="btn-custom"><span class="glyphicon glyphicon-off"></span> Login</button>
+          </form>
+
+
+	 </div>
+    <div id="Register" class="tab-pane fade">
+
+			<form role="form" class="regi">
+            <div class="form-group">
+              <label for="usrnameR"> Username</label>
+              <input type="email" class="form-control" id="usrnameR" name="usrnameR" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="pswR">Password</label>
+              <input type="password" class="form-control" id="pswR" name="pswR" placeholder="Enter password">
+            </div>
+              <button type="submit" id="reg" class="btn-custom">Register</button>
+          </form>
+	</div>
+  </div>
+
+
+
+
+        </div>
+
+        <div class="modal-footer">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+</div>
+			<div class="span1">
+
+			</div>
+			<!--end: Row -->
+		</div>
+		</div>
+		<!--end: Container-->
+
+</div>
+
+</body>
+<script>
+$(document).ready(function(){
+    $("#myBtn").click(function(){
+        $("#myModal").modal();
+    });
+});
+</script>
+<script>
+
+    $(function() {
+//twitter bootstrap script
+        $("button#reg").click(function(){
+            $.ajax({
+                type: "POST",
+                url: "register.php",
+                data: $('form.regi').serialize(),
+                success: function(msg) {
+                    alert("successfully registered!");
+                }
+            });
+        });
+    });
+
+    $(function() {
+//twitter bootstrap script
+        $("button#log").click(function(){
+            $.ajax({
+                type: "POST",
+                url: "login.php",
+                data: $('form.logi').serialize(),
+                success: function(msg) {
+                    if(msg=="success") {
+                        var a = $("<a>");
+                        a.attr("href","Recipe.pdf").attr("download", "Recipe.pdf").appendTo("body");
+                        a[0].click();
+                        a.remove();
+                    } else {
+                        alert("login credentials do not match");
+                    }
+                }
+
+            });
+        });
+    });
+
+
+
+
+</script>
+</html>
